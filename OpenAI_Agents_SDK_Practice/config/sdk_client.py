@@ -5,7 +5,7 @@ from agents import OpenAIChatCompletionsModel
 from openai import AsyncOpenAI
 
 # 0.1. Loading the environment variables from the project config folder
-load_dotenv(Path(__file__).resolve().parent / ".env")
+load_dotenv(Path(__file__).resolve().parent.parent / ".env")
 
 # 1. Which LLM Provider to use? -> Google Chat Completions API Service
 external_client: AsyncOpenAI = AsyncOpenAI(
